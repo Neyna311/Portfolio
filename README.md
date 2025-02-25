@@ -1,16 +1,15 @@
-## Hi there 👋
+## Hi there, I'm Neyna! 👋
 
-<!--
-**Neyna311/Neyna311** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Bienvenue sur mon profil GitHub. Je suis passionné(e) par la data, l’analyse et la visualisation.  
+N’hésitez pas à jeter un œil à mes projets et à me contacter pour toute collaboration !
 
-Here are some ideas to get you started:
+## Mes liens
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- [Mon LinkedIn](https://linkedin.com/in/neyna-mohamedyehdih)
+- [Mon CV sur CVDesignr](https://cvdesignr.com/p/63061a6320805)
+- [Mon Portfolio Tableau](https://public.tableau.com/views/Portfolio_17395139557060/Portfolio?:language=fr-FR&publish=yes&:sid=&:display_count=n&:origin=viz_share_link)
+
+
+Merci de votre visite et à bientôt sur GitHub !
+
+
