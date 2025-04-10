@@ -1,4 +1,4 @@
-# Hi there, I'm Neyna! 👋
+## Hi there, I'm Neyna! 👋
 
 Bienvenue sur mon profil GitHub !
 
@@ -6,7 +6,7 @@ Je suis passionnée par la data, l’analyse et la visualisation. Mon objectif :
 
 🚀 N'hésitez pas à explorer mes projets et à me contacter pour toute idée ou collaboration.  
 
-# 🔗 Liens utiles
+## 🔗 Liens utiles
 
 - [Mon Portfolio Tableau](https://public.tableau.com/views/Portfolio_17395139557060/Portfolio?:language=fr-FR&publish=yes&:sid=&:display_count=n&:origin=viz_share_link)
 - [Mon LinkedIn](https://linkedin.com/in/neyna-mohamedyehdih)
