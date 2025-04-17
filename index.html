@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio de Neyna</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-DI43VPFEXYlP/jlfRrOgV6dyj7QTKLaHcEuHABuKhXkv7DLxJ/qzOXnpX1J/FpgqLZKiwk3ZExrm1cPwv0cMzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       margin: 0;
@@ -12,18 +13,27 @@
       box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
     }
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
     body {
-      background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/6688262-triangle-geometrique-noir-arriere-plan-3d-mosaique-sombre-geometrie-motif-polygone-forme-motif-toile-de-fond-triangulaire-creatif-modele-abstrait-moderne-fond-d-ecran-conception-illustrationle-vectoriel.jpg');
+      background-color: #0d0d0d;
+      background-image: url('https://www.transparenttextures.com/patterns/geometry.png');
       background-blend-mode: multiply;
       background-size: cover;
       color: white;
-      text-align: center;
+    }
+    .section {
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       padding: 2rem;
+      position: relative;
     }
     .container {
       max-width: 800px;
@@ -69,6 +79,47 @@
       color: #ddd;
       text-decoration: underline;
     }
+    .full-screen-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      z-index: 0;
+    }
+    #miro {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .scroll-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: #00ffae;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .scroll-down i {
+      font-size: 2.5rem;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
   </style>
 </head>
 <body>
@@ -84,6 +135,7 @@
         <a href="https://cvdesignr.com/p/63061a6320805">Mon CV sur CVDesignR</a>
       </div>
     </div>
+    <a href="#miro" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
   </section>
 
   <section id="miro">
