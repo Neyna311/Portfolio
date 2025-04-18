@@ -7,193 +7,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-DI43VPFEXYlP/jlfRrOgV6dyj7QTKLaHcEuHABuKhXkv7DLxJ/qzOXnpX1J/FpgqLZKiwk3ZExrm1cPwv0cMzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-    html, body {
-      height: 100%;
-      width: 100%;
-      overflow-x: hidden;
-    }
-    body {
-      background-color: #0d0d0d;
-      background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/6688262-triangle-geometrique-noir-arriere-plan-3d-mosaique-sombre-geometrie-motif-polygone-forme-motif-toile-de-fond-triangulaire-creatif-modele-abstrait-moderne-fond-d-ecran-conception-illustrationle-vectoriel.jpg');
-      background-blend-mode: multiply;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: white;
-      text-align: center;
-    }
-    .section {
-      height: 100vh;
+    /* styles existants */
+    /* ... (inchangés pour la plupart) ... */
+
+    .popup-nav {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      position: relative;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #f0f0f0;
     }
-    .container {
-      max-width: 800px;
-    }
-    .avatar {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      margin: 1rem 0 2rem 0;
-    }
-    a.button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: transparent;
-      border: 2px solid #00ffae;
-      border-radius: 25px;
-      color: #00ffae;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s, color 0.3s;
-    }
-    a.button:hover {
-      background-color: #00ffae;
-      color: #0d0d0d;
-    }
-    .links {
-      margin-top: 2rem;
-    }
-    .links a {
-      display: block;
-      margin: 0.5rem 0;
-      color: #ddd;
-      text-decoration: underline;
-    }
-    .full-screen-iframe {
-      width: 100vw;
-      height: 100vh;
+    .popup-nav button {
+      background: none;
       border: none;
-      display: block;
-    }
-    #miro {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      z-index: 1;
-    }
-    .scroll-down {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 2rem;
-      color: #00ffae;
-      animation: bounce 2s infinite;
-      cursor: pointer;
-      z-index: 10;
-    }
-    .scroll-down i {
-      font-size: 2.5rem;
-    }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateX(-50%) translateY(0);
-      }
-      40% {
-        transform: translateX(-50%) translateY(-10px);
-      }
-      60% {
-        transform: translateX(-50%) translateY(-5px);
-      }
-    }
-    #presentation {
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    #popupContainer {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-    #popupContent {
-      background: white;
-      width: 90%;
-      height: 90%;
-      max-width: 900px;
-      position: relative;
-    }
-    #popupContent iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 2rem;
-      color: black;
-      cursor: pointer;
       font-weight: bold;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid transparent;
+    }
+    .popup-nav button.active {
+      border-bottom: 2px solid #00aa88;
     }
   </style>
 </head>
 <body>
-  <section class="section">
-    <div class="container">
-      <img src="https://avatars.githubusercontent.com/u/191117953?v=4" alt="Photo de Neyna" class="avatar">
-      <h1>Hi there, I’m Neyna !</h1>
-      <h2>Passionnée par la data, l'analyse et la visualisation. Mon objectif : transformer les données en leviers de décision clairs et percutants.</h2>
-      <a href="mailto:neina2006@yahoo.fr" class="button">Contactez-moi</a>
-      <div class="links">
-        <a href="https://public.tableau.com/views/Portfolio_17395139557060/Portfolio?:language=fr-FR&publish=yes&:sid=&:display_count=n&:origin=viz_share_link">Mon Portfolio Tableau</a>
-        <a href="https://linkedin.com/in/neyna-mohamedyehdih">Mon LinkedIn</a>
-        <a href="https://cvdesignr.com/p/63061a6320805">Mon CV sur CVDesignR</a>
-      </div>
-    </div>
-    <a href="#miro" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
-  </section>
-
-  <section id="miro">
-    <iframe 
-      src="https://miro.com/app/live-embed/uXjVLEU69Rg=/?moveToViewport=-123922,-52749,96482,45854&embedId=817511372801" 
-      class="full-screen-iframe" 
-      scrolling="no" 
-      allow="fullscreen; clipboard-read; clipboard-write" 
-      allowfullscreen>
-    </iframe>
-  </section>
-
+  <!-- contenu existant jusqu'à #presentation -->
   <section id="presentation">
-    <h2 style="margin-bottom: 2rem;">Voir le cahier des charges</h2>
+    <h2 style="margin-bottom: 2rem;">Voir les documents de présentation</h2>
     <a href="#" class="button" onclick="document.getElementById('popupContainer').style.display='flex'; return false;">Voir</a>
   </section>
 
   <div id="popupContainer">
     <div id="popupContent">
       <span class="close-btn" onclick="document.getElementById('popupContainer').style.display='none';">&times;</span>
-      <iframe src="cahier_des_charges_fonctionnel.pdf"></iframe>
+      <div class="popup-nav">
+        <button onclick="showPdf('pdfs/cahier_des_charges_fonctionnel.pdf', this)" class="active">Cahier des charges</button>
+        <button onclick="showPdf('pdfs/Analyse_besoins_metiers.pdf', this)">Analyse des besoins métiers</button>
+        <button onclick="showPdf('pdfs/Guide_creation_graphiques_Power BI.pdf', this)">Guide de création des graphiques avec Power BI</button>
+      </div>
+      <iframe id="pdfFrame" src="pdfs/cahier_des_charges_fonctionnel.pdf"></iframe>
     </div>
   </div>
+
+  <script>
+    function showPdf(src, button) {
+      document.getElementById('pdfFrame').src = src;
+      document.querySelectorAll('.popup-nav button').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    }
+  </script>
 </body>
 </html>
