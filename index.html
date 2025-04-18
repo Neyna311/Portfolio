@@ -231,21 +231,6 @@
     </div>
     <a href="#miro" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
   </section>
-
-  <nav style="position: fixed; top: 0; width: 100%; background: #fff; padding: 1rem; z-index: 999; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <a href="#tableau-embed" style="
-      display: inline-block;
-      padding: 0.6rem 1.5rem;
-      background-color: #00aa88;
-      color: white;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    ">📊 Aller à la visualisation Tableau</a>
-  </nav>
-  <div style="height: 70px;"></div>
-  
   <section id="miro">
     <iframe 
       src="https://miro.com/app/live-embed/uXjVLEU69Rg=/?moveToViewport=-123922,-52749,96482,45854&embedId=817511372801" 
@@ -322,16 +307,16 @@
       allowfullscreen>
     </iframe>
   </section>
-
-  <section id="tableau-embed" class="embed-section">
-    <h2>Visualisation Tableau</h2>
-    <div class='tableauPlaceholder' id='viz1744943337139' style='position: relative'>
+  
+  <section id="tableau-embed" style="padding: 4rem 2rem; background-color: #f9f9f9; text-align: center;">
+    <h2 style="margin-bottom: 2rem;">Visualisation Tableau</h2>
+    <div class='tableauPlaceholder' id='viz1744943337139' style='width:100%; max-width: 100%; margin: auto;'>
       <noscript>
         <a href='#'>
-          <img alt='Portfolio ' src='https://public.tableau.com/static/images/Po/Portfolio_17395139557060/Portfolio/1_rss.png' style='border: none' />
+          <img alt='Portfolio ' src='https://public.tableau.com/static/images/Po/Portfolio_17395139557060/Portfolio/1_rss.png' style='border: none; width: 100%; height: auto;' />
         </a>
       </noscript>
-      <object class='tableauViz' style='display:none;'>
+      <object class='tableauViz' style='width: 100%; height: 80vh;'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
         <param name='embed_code_version' value='3' />
         <param name='site_root' value='' />
@@ -350,16 +335,7 @@
     <script type='text/javascript'>
       var divElement = document.getElementById('viz1744943337139');
       var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.width = '1520px';
-        vizElement.style.height = '987px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.width = '1520px';
-        vizElement.style.height = '987px';
-      } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '3077px';
-      }
+      vizElement.style.width = '100%'; vizElement.style.height = '80vh';
       var scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
