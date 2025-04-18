@@ -174,6 +174,21 @@
     .popup-nav button.active {
       border-bottom: 2px solid #00aa88;
     }
+    .embed-section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f9f9f9;
+      padding: 2rem;
+    }
+    .embed-section iframe {
+      width: 90%;
+      height: 80vh;
+      border: none;
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -228,6 +243,17 @@
       allowfullscreen 
       style="width: 90%; height: 90%; border-radius: 12px;">
     </iframe>
+  </section>
+
+  <section id="datawrapper" class="embed-section">
+    <h2>Visualisations Datawrapper</h2>
+    <iframe src="https://datawrapper.dwcdn.net/qRSur/1/"></iframe>
+    <iframe src="https://datawrapper.dwcdn.net/zrhmM/1/"></iframe>
+  </section>
+
+  <section id="animation-animejs" class="embed-section">
+    <h2>Animation interactive avec Anime.js</h2>
+    <iframe src="https://neyna311.github.io/animation-animejs/"></iframe>
   </section>
 
   <script>
