@@ -156,6 +156,24 @@
       cursor: pointer;
       font-weight: bold;
     }
+    .popup-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #f0f0f0;
+    }
+    .popup-nav button {
+      background: none;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid transparent;
+    }
+    .popup-nav button.active {
+      border-bottom: 2px solid #00aa88;
+    }
   </style>
 </head>
 <body>
@@ -183,7 +201,7 @@
       allowfullscreen>
     </iframe>
   </section>
-  
+
   <section id="presentation">
     <h2 style="margin-bottom: 2rem;">Voir les documents de présentation</h2>
     <a href="#" class="button" onclick="document.getElementById('popupContainer').style.display='flex'; return false;">Voir</a>
@@ -193,11 +211,11 @@
     <div id="popupContent">
       <span class="close-btn" onclick="document.getElementById('popupContainer').style.display='none';">&times;</span>
       <div class="popup-nav">
-        <button onclick="showPdf('pdfs/presentation1.pdf', this)" class="active">Présentation 1</button>
-        <button onclick="showPdf('pdfs/presentation2.pdf', this)">Présentation 2</button>
-        <button onclick="showPdf('pdfs/presentation3.pdf', this)">Présentation 3</button>
+        <button onclick="showPdf('pdfs/cahier_des_charges_fonctionnel.pdf', this)" class="active">Cahier des charges</button>
+        <button onclick="showPdf('pdfs/Analyse_besoins_metiers.pdf', this)">Analyse des besoins métiers</button>
+        <button onclick="showPdf('pdfs/Guide_creation_graphiques_Power BI.pdf', this)">Guide de création des graphiques avec Power BI</button>
       </div>
-      <iframe id="pdfFrame" src="pdfs/presentation1.pdf"></iframe>
+      <iframe id="pdfFrame" src="pdfs/cahier_des_charges_fonctionnel.pdf"></iframe>
     </div>
   </div>
 
